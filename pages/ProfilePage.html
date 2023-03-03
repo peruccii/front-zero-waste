@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+
+    <link rel="stylesheet" href="../css/ProfilePage.css">
+
+    <script src="../js/app.js" type="module"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/b4e9d6f03e.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="fonts/remixicon.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class="fa-solid fa-recycle icon"></i>
+            <div class="logo_name">ZeroWaste</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Procurar...">
+                <span class="tooltip">Procurar</span>
+            </li>
+            <li>
+                <a href="#" class="list-items">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#" class="list-items">
+                    <i class="fa-solid fa-street-view"></i>
+                    <span class="links_name">Solicite uma coleta</span>
+                </a>
+                <span class="tooltip">Solicite uma coleta</span>
+            </li>
+            <li>
+                <a href="#" class="list-items">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span class="links_name">Cadastre um ponto de entrega</span>
+                </a>
+                <span class="tooltip">Cadastre um ponto de entrega</span>
+            </li>
+            <li>
+                <a href="#" class="list-items">
+                    <i class='bx bxs-map-pin'></i>
+                    <span class="links_name">Mapa de catadores proximos</span>
+                </a>
+                <span class="tooltip">Mapa de catadores proximos</span>
+            </li>
+            <li>
+                <a href="#" class="list-items">
+                    <i class='bx bxs-coupon bx-tada bx-flip-vertical'></i>
+                    <span class="links_name">Pontuação</span>
+                </a>
+                <span class="tooltip">Pontuação</span>
+            </li>
+            <li>
+                <a href="#" class="list-items">
+                    <i class='bx bx-book-open bx-flip-vertical'></i>
+                    <span class="links_name">Dicas</span>
+                </a>
+                <span class="tooltip">Dicas</span>
+            </li>
+            <li>
+
+            <li class="profile">
+                <a href="./perfil.html" class="details-link" target="_self">
+                    <div class="profile-details">
+                        <img src="../img/testeiconpessoa.png" alt="profileImg">
+                        <div class="name_job">
+                            <div class="name" id="username">Eduardo Perucci</div>
+                            <div class="job" id="modo">Gerador</div>
+                        </div>
+                    </div>
+                </a>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <span class="main_bg"></span>
+    <div class="container">
+
+
+        <section class="userProfile card">
+            <div class="profile">
+                <figure><img src="https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg" alt="profile"
+                        width="250px" height="250px"></figure>
+            </div>
+        </section>
+
+        <section class="work_skills card">
+
+            <div class="work">
+                <div class="primary">
+                    <h1>Biografia</h1>
+                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book. It has survived not only five
+                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                        was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including
+                        versions of Lorem Ipsum.</span>
+
+                </div>
+        </section>
+
+        <section class="userDetails card">
+            <div class="userName">
+                <h1 class="name" id="name">Nome Sobrenome</h1>
+                <div class="map">
+                    <i class="ri-map-pin-fill ri"></i>
+                    <span>(localização)</span>
+                </div>
+                <p>Catador/gerador</p>
+            </div>
+
+            <div class="rank">
+                <h1 class="heading">Avaliação</h1>
+                <span>8,6</span>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+
+            <div class="btns">
+                <ul>
+                    <li class="sendMsg">
+                        <i class="ri-chat-4-fill ri"></i>
+                        <a href="#">Solicite uma coleta</a>
+                    </li>
+
+                    <li class="sendMsg active">
+                        <i class="ri-check-fill ri"></i>
+                        <a href="#">Contatos</a>
+                    </li>
+
+                    <li class="sendMsg">
+                        <a href="#">Avaliar usuario</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section class="timeline_about card">
+            <div class="tabs">
+                <ul>
+                    <li class="about active">
+                        <i class="ri-user-3-fill ri"></i>
+                        <span>Sobre</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact_Info">
+                <h1 class="heading">Informação de contato</h1>
+                <ul>
+                    <li class="phone">
+                        <h1 class="label">Telefone:</h1>
+                        <span class="info">(telefone)</span>
+                    </li>
+
+                    <li class="address">
+                        <h1 class="label">Endereço:</h1>
+                        <span class="info">(cep)<br> (complemento)</span>
+                    </li>
+
+                    <li class="email">
+                        <h1 class="label">E-mail:</h1>
+                        <span class="info">email@gmail.com</span>
+                    </li>
+
+                    <li class="site">
+                        <h1 class="label">Materiais que eu recolho</h1>
+                        <span class="info"></span>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="basic_info">
+
+                <ul>
+                    <li class="birthday">
+                        <h1 class="label">Hora/Disponível:</h1>
+                        <span class="info">14:00 -- 19:30</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();
+        });
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();
+        });
+
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
