@@ -180,14 +180,16 @@ const formLogin = async () => {
                 localStorage.setItem('nome', login.user.pessoa_fisica[0].nome)
             }
 
+            console.log(login.user.catador.length);
 
-            if (login.user.catador.length != 0) {
-                localStorage.setItem('catador', true)
-            } else {
-                localStorage.setItem('catador', false)
+
+            if (login.user.catador.length > 0) {
+                localStorage.setItem('modo', 'Catador')
+            } else{
+                localStorage.setItem('modo', 'Gerador')
             }
 
-            open('../tela_inicial_atualizado1-main/pages/home_page.html', '_self')
+            open('../pages/home_page.html', '_self')
         } else {
             error()
         }
